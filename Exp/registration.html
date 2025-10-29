@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+        <table border="1" class="Table" align="center" width="100%" cellpadding="25" cellspacing="0">
+            <tr bgcolor="LightSalmon">
+                <th><img src="image.png" height="150"></th>
+                <th colspan="4">
+                    <h2>Books Bhandar</h2>
+                </th>
+            </tr>
+            <tr bgcolor="#FFE4C4">
+                <th><a href="index.html">Home</a></th>
+                <th><a href="login.html">Login</a></th>
+                <th><a href="registration.html">Registration</a></th>
+                <th><a href="Catalogue.html">Catalogue</a></th>
+                <th><a href="Cart.html">Cart</a></th>
+            </tr>
+            <tr bgcolor="Khaki">
+                <td>
+                    CSE
+                </td>
+                <td rowspan="4" colspan="4">
+                    <form action="registration.html" method="post">
+                        <h2 align="center">Registration Form</h2>
+                        <div style="padding:10px;">
+                            <label for="fullname">Full Name:</label><br>
+                            <input type="text" id="fullname" name="fullname" required maxlength="100" style="width:95%;"><br><br>
+
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required style="width:95%;"><br><br>
+
+                            <label for="password">Password:</label><br>
+                            <input type="password" id="password" name="password" required minlength="6" style="width:95%;"><br><br>
+
+                            <label for="confirm_password">Confirm Password:</label><br>
+                            <input type="password" id="confirm_password" name="confirm_password" required style="width:95%;"><br><br>
+
+                            <label>Gender:</label><br>
+                            <label><input type="radio" name="gender" value="male" required> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label><br><br>
+
+                            <label for="department">Department:</label><br>
+                            <select id="department" name="department" required style="width:98%;">
+                                <option value="">-- Select Department --</option>
+                                <option value="CSE">CSE</option>
+                                <option value="ECE">ECE</option>
+                                <option value="EEE">EEE</option>
+                                <option value="CIVIL">CIVIL</option>
+                                <option value="OTHER">Other</option>
+                            </select><br><br>
+
+                            <label for="phone">Phone:</label><br>
+                            <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter 10 digit phone number" style="width:95%;"><br><br>
+
+                            <label for="address">Address:</label><br>
+                            <textarea id="address" name="address" rows="4" style="width:95%;"></textarea><br><br>
+
+                            <div style="text-align:center;">
+                                <input type="submit" value="Register">
+                                <input type="reset" value="Reset">
+                            </div>
+
+                            </form>
+                        </div>
+                </td>
+            </tr>
+            <tr bgcolor="Khaki">
+                <td>
+                    ECE
+                </td>
+            </tr>
+            <tr bgcolor="Khaki">
+                <td>
+                    EEE
+                </td>
+            </tr>
+            <tr bgcolor="Khaki">
+                <td>
+                    CIVIL
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
